@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        primary: ["Barlow Condensed"],
+        secondary: ["Montserrat"],
+        signature: ["Waiting for the Sunrise"],
+      },
+    },
   },
   plugins: [],
 };
