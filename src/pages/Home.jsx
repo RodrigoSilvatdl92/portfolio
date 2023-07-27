@@ -16,10 +16,7 @@ function Home() {
               <br /> I'm <span className="text-blue-800">
                 Rodrigo
               </span> <br /> a{" "}
-              <span className="text-blue-800">
-                {" "}
-                front-end <br />
-              </span>{" "}
+              <span className="text-blue-800"> front-end </span>{" "}
               <span>developer</span>
             </p>
             <button className="border-2 border-blue-800 px-2 rounded my-4 font-secondary bg-blue-800 text-white hover:bg-blue-700">
