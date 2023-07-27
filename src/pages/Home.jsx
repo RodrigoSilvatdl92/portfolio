@@ -18,13 +18,12 @@ function Home() {
               </span> <br /> a{" "}
               <span className="text-blue-800">
                 {" "}
-                self-taught <br />
+                front-end <br />
               </span>{" "}
-              front-end developer
+              <span>developer</span>
             </p>
             <button className="border-2 border-blue-800 px-2 rounded my-4 font-secondary bg-blue-800 text-white hover:bg-blue-700">
-              <Link to="/Projects" />
-              Projects
+              <Link to="/projects">Projects</Link>
             </button>
           </div>
         </div>

@@ -11,22 +11,22 @@ function Navbar() {
     <div className="  fixed top-0 left-0 w-full z-20 bg-black">
       <div className=" mx-auto max-w-screen-xl flex justify-between px-4">
         <div>
-          <p className="text-white font-signature text-5xl py-5 -rotate-12  ">
+          <p className="text-white font-signature text-5xl py-5  ">
             Rodrigo Silva
           </p>
         </div>
         <div className="hidden md:block">
           <ul className="flex  justify-center gap-16">
-            <li className="text-3xl text-white font-primary py-5 hover:underline hover:decoration-blue-800 cursor-pointer">
+            <li className="text-3xl text-white font-primary py-5 hover:underline hover:decoration-blue-800 cursor-pointer ">
               <Link to="/">Home</Link>
             </li>
-            <li className="text-3xl text-white font-primary py-5 hover:underline hover:decoration-blue-800 cursor-pointer">
+            <li className="text-3xl text-white font-primary py-5 hover:underline hover:decoration-blue-800 cursor-pointer ">
               <Link to="/aboutme">About Me</Link>
             </li>
-            <li className="text-3xl text-white font-primary py-5 hover:underline hover:decoration-blue-800 cursor-pointer">
+            <li className="text-3xl text-white font-primary py-5 hover:underline hover:decoration-blue-800 cursor-pointer ">
               <Link to="/skills">Skills</Link>
             </li>
-            <li className="text-3xl text-white font-primary py-5 hover:underline hover:decoration-blue-800 cursor-pointer">
+            <li className="text-3xl text-white font-primary py-5 hover:underline hover:decoration-blue-800 cursor-pointer ">
               <Link to="/projects">Projects</Link>
             </li>
           </ul>
