@@ -11,13 +11,6 @@ import "swiper/css/pagination";
 function Projects() {
   const items = [
     {
-      title: "MovieApp",
-      link: "https://projecto6-myprojects.web.app",
-      description:
-        "MovieApp is a web application built using ReactJS, Tailwind  CSS, and Firebase. It replicates the layout of a popular streaming platform, offering features such as user account creation, login, logout, and the ability to add or remove movies from favorites.",
-      gitHub: "https://github.com/RodrigoSilvatdl92/MovieApp",
-    },
-    {
       title: "ChatApp",
       link: "https://chatapp-b71f7.firebaseapp.com",
       description:
@@ -31,6 +24,14 @@ function Projects() {
         "ToDoApp is a ReactJS and Tailwind-based project integrated with Firebase, enabling users to register accounts, create personalized profiles, and efficiently manage their tasks and events. With ToDoApp, users can seamlessly add, update, and delete events on a calendar, assigning various priorities and modifying event details.",
       gitHub: "https://github.com/RodrigoSilvatdl92/ToDoApp",
     },
+    {
+      title: "MovieApp",
+      link: "https://projecto6-myprojects.web.app",
+      description:
+        "MovieApp is a web application built using ReactJS, Tailwind  CSS, and Firebase. It replicates the layout of a popular streaming platform, offering features such as user account creation, login, logout, and the ability to add or remove movies from favorites.",
+      gitHub: "https://github.com/RodrigoSilvatdl92/MovieApp",
+    },
+
     {
       title: "FourInLineApp",
       link: "https://rodrigosilvatdl92.github.io/FourInLine/",
@@ -182,6 +183,22 @@ function Projects() {
                       {item.description}
                     </p>
                   </div>
+                  {item.link === "noLink" ? (
+                    ""
+                  ) : (
+                    <div className="flex w-full justify-center gap-16 mt-4 mb-10">
+                      <button className="bg-blue-800 border-2 border-blue-800 text-white rounded-sm px-1 font-secondary">
+                        <Link to={item.link} target={"_blank"}>
+                          Demo
+                        </Link>
+                      </button>
+                      <button className="bg-blue-800 border-2 border-blue-800 text-white rounded-sm px-1 font-secondary">
+                        <Link to={item.gitHub} target={"_blank"}>
+                          Code
+                        </Link>
+                      </button>
+                    </div>
+                  )}
                 </SwiperSlide>
               ))}
             </Swiper>
