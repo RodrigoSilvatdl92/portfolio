@@ -63,7 +63,7 @@ function Projects() {
                 >
                   {index % 2 === 0 ? (
                     <>
-                      <div className="w-[275px] h-[375px] overflow-hidden rounded-xl relative ">
+                      <div className="w-[280px] h-[375px] overflow-hidden rounded-xl relative shadow-md shadow-black ">
                         {item.link === "noLink" ? (
                           <img
                             src={work}
@@ -74,7 +74,7 @@ function Projects() {
                           <iframe
                             src={item.link}
                             title={item.title}
-                            className="origin-top-left scale-[0.5] w-[570px] h-[750px] overflow-auto"
+                            className="origin-top-left scale-[0.5] w-[577px] h-[750px] overflow-auto"
                           ></iframe>
                         )}
                       </div>
@@ -90,12 +90,12 @@ function Projects() {
                           ""
                         ) : (
                           <div className="flex w-full justify-around mt-4">
-                            <button className="bg-blue-800 border-2 border-blue-800 text-white rounded-sm px-1 font-secondary">
+                            <button className="bg-blue-800 border-2 border-blue-800 text-white rounded-sm px-1 font-secondary hover:bg-blue-600 hover:border-blue-600">
                               <Link to={item.link} target={"_blank"}>
                                 Demo
                               </Link>
                             </button>
-                            <button className="bg-blue-800 border-2 border-blue-800 text-white rounded-sm px-1 font-secondary">
+                            <button className="bg-blue-800 border-2 border-blue-800 text-white rounded-sm px-1 font-secondary hover:bg-blue-600 hover:border-blue-600">
                               <Link to={item.gitHub} target={"_blank"}>
                                 Code
                               </Link>
@@ -117,12 +117,12 @@ function Projects() {
                           ""
                         ) : (
                           <div className="flex w-full justify-around mt-4">
-                            <button className="bg-blue-800 border-2 border-blue-800 text-white rounded-sm px-1 font-secondary">
+                            <button className="bg-blue-800 border-2 border-blue-800 text-white rounded-sm px-1 font-secondary hover:bg-blue-600 hover:border-blue-600">
                               <Link to={item.link} target={"_blank"}>
                                 Demo
                               </Link>
                             </button>
-                            <button className="bg-blue-800 border-2 border-blue-800 text-white rounded-sm px-1 font-secondary">
+                            <button className="bg-blue-800 border-2 border-blue-800 text-white rounded-sm px-1 font-secondary hover:bg-blue-600 hover:border-blue-600">
                               <Link to={item.gitHub} target={"_blank"}>
                                 Code
                               </Link>
@@ -130,7 +130,7 @@ function Projects() {
                           </div>
                         )}
                       </div>
-                      <div className="w-[275px] h-[375px] overflow-hidden rounded-xl ">
+                      <div className="w-[275px] h-[375px] overflow-hidden rounded-xl shadow-md shadow-black ">
                         {item.link === "noLink" ? (
                           <img src={work} alt={"/"} />
                         ) : (
@@ -159,7 +159,7 @@ function Projects() {
             >
               {items.map((item, index) => (
                 <SwiperSlide key={index} className=" w-full ">
-                  <div className="mx-auto w-[275px] h-[375px] overflow-hidden relative rounded-xl">
+                  <div className="mx-auto w-[275px] h-[375px] overflow-hidden relative rounded-xl shadow-md shadow-black">
                     {item.link === "noLink" ? (
                       <img
                         src={work}
@@ -187,12 +187,12 @@ function Projects() {
                     ""
                   ) : (
                     <div className="flex w-full justify-center gap-16 mt-4 mb-10">
-                      <button className="bg-blue-800 border-2 border-blue-800 text-white rounded-sm px-1 font-secondary">
+                      <button className="bg-blue-800 border-2 border-blue-800 text-white rounded-sm px-1 font-secondary hover:bg-blue-600 hover:border-blue-600">
                         <Link to={item.link} target={"_blank"}>
                           Demo
                         </Link>
                       </button>
-                      <button className="bg-blue-800 border-2 border-blue-800 text-white rounded-sm px-1 font-secondary">
+                      <button className="bg-blue-800 border-2 border-blue-800 text-white rounded-sm px-1 font-secondary hover:bg-blue-600 hover:border-blue-600">
                         <Link to={item.gitHub} target={"_blank"}>
                           Code
                         </Link>
