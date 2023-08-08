@@ -24,7 +24,7 @@ function AboutMe() {
               />
               <p className="text-white mt-4 leading-8 text-base md:text-xl">
                 Hello! I'm Rodrigo, a front-end developer. Ever since a young
-                age, I immersed myself in playing games on the computer and
+                age, I immersed myself playing games on the computer and
                 exploring its intricacies, which sparked my passion for all
                 things tech-related.
               </p>
