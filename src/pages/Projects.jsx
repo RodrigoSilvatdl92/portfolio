@@ -49,7 +49,7 @@ function Projects() {
   return (
     <>
       <Navbar />
-      <div className="w-screen h-screen bg-gradient-to-br from-black to-gray-900 overflow-auto">
+      <div className="w-full h-full bg-gradient-to-br from-black to-gray-900 overflow-y-auto">
         <div className="mx-auto max-w-screen-xl mt-32 ">
           <h1 className="text-4xl font-secondary text-blue-800 text-center">
             Projects
